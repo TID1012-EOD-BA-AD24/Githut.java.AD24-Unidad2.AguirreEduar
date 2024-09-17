@@ -1,4 +1,8 @@
+
 package miPrincipal;
+import java.util.EmptyStackException;
+import java.util.Stack;
+
 import pila.Pila;
 public class Principal {
     public String getGreeting() {
@@ -24,6 +28,41 @@ public class Principal {
         pila1.retirar();//retira el 2
         System.out.println("El tope de la pila es " + pila1.cima());
         System.out.println("¿pila vacia?"+ pila1.esVacia());
-    }
+    
+    //USO DE LA CLASE STACK
+    //Crear a una pila de enteros
+    Stack<Integer> pila = new Stack<Integer>();
+    //apilar elementos
+    pila.push(2);
+    pila.push(5);
+    pila.push(7);
+    System.out.println("El tope  de la pila;"+pila.peek());
+    //desapilamos elementos
+    try{ //usamos try catch para la excepcion 
+    pila.pop();
+    System.out.println("El tope  de la pila;"+pila.peek());
+    pila.pop();
+    System.out.println("El tope  de la pila;"+pila.peek());
+    pila.pop();
+    System.out.println("El tope  de la pila;"+pila.peek());
 
+    } catch (EmptyStackException e) {
+        System.out.println("Error: La pila está vacía.");
+    }
+    //cuando desapila de una pila vacia
+    try {
+    pila.pop(); // Esto lanzará una excepción
+    } catch (EmptyStackException e) {
+        System.out.println("Error: No se puede desapilar, la pila está vacía.");
+    }
+    //Apilar mas Elementos
+    pila.push(10);
+    pila.push(8);
+    pila.push(20);
+    System.out.println("El elemento 8 se encuentra en la posicion:"+pila.search(8));
+    System.out.println("El elemento 10 se encuentra en la posicion:"+pila.search(10));
+    System.out.println("El elemento 20 se encuentra en la posicion:"+pila.search(20));
+
+
+    }
 }

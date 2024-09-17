@@ -49,4 +49,19 @@ public void retirar() {
     else
     return null;
     }
+    //devuelve la posicion del objeto obj de la pila
+    public int buscar(T elemento) {
+        Nodo<T> actual = cabeza;
+        int posicion = 1; // La primera posición es la cima de la pila
+
+        while (actual != null) {
+            if (actual.getValor().equals(elemento)) {
+                return posicion;
+            }
+            actual = actual.getSiguiente();
+            posicion++;
+        }
+        return -1; // Si no encuentra el elemento, devuelve -1
     }
+}
+    
