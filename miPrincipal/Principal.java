@@ -28,6 +28,15 @@ public class Principal {
         pila1.retirar();//retira el 2
         System.out.println("El tope de la pila es " + pila1.cima());
         System.out.println("¿pila vacia?"+ pila1.esVacia());
+
+    pila1.apilar(8);
+    pila1.apilar(10);
+    pila1.apilar(20);
+
+    if(pila1.buscar(8)!= -1)
+        System.out.println("el elemento buscado esta en la posicion "+pila1.buscar(8));
+    else
+        System.out.println("elemento no encontrado");
     
     //USO DE LA CLASE STACK
     //Crear a una pila de enteros
@@ -38,6 +47,7 @@ public class Principal {
     pila.push(7);
     System.out.println("El tope  de la pila;"+pila.peek());
     //desapilamos elementos
+    
     try{ //usamos try catch para la excepcion 
     pila.pop();
     System.out.println("El tope  de la pila;"+pila.peek());
@@ -55,6 +65,7 @@ public class Principal {
     } catch (EmptyStackException e) {
         System.out.println("Error: No se puede desapilar, la pila está vacía.");
     }
+
     //Apilar mas Elementos
     pila.push(10);
     pila.push(8);

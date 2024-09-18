@@ -50,12 +50,12 @@ public void retirar() {
     return null;
     }
     //devuelve la posicion del objeto obj de la pila
-    public int buscar(T elemento) {
+    public int buscar(Object obj) {
         Nodo<T> actual = cabeza;
-        int posicion = 1; // La primera posición es la cima de la pila
+        int posicion = 0; // La primera posición es la cima de la pila
 
         while (actual != null) {
-            if (actual.getValor().equals(elemento)) {
+            if (actual.getValor().equals(obj)) {
                 return posicion;
             }
             actual = actual.getSiguiente();
