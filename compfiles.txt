@@ -1,5 +1,10 @@
-./miPrincipal/Principal.java
 ./miPrincipal/Nodo.java
+./miPrincipal/ClienteDelimitador2.java
+./miPrincipal/Principal.java
+./miPrincipal/Delimitadores.java
+./miPrincipal/AppDelimitador.java
+./miTest/AppTest.java
+./cola/Cola.java
+./cola/Nodo.java
 ./pila/Nodo.java
 ./pila/Pila.java
-./miTest/AppTest.java
