@@ -26,8 +26,9 @@ public class Lista<T> {
     public void agregar(T valor){
         Nodo<T> nuevo = new Nodo<T>();
         nuevo.setValor(valor);
-        if(!esVacia())
+        if(esVacia()){
            cabeza = nuevo;
+        }
         else{
             //Agregar al final de la lista
             Nodo<T> aux = cabeza;

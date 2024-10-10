@@ -1,9 +1,8 @@
 package lista;
 
-public class PosicionIlegalException extends Exception {
+public class PosicionIlegalException extends Exception{
     public PosicionIlegalException(){
-        super("posicion ilegal en la lista");
-
+        super("Posicion ilegal en la lista");
     }
     
 }
