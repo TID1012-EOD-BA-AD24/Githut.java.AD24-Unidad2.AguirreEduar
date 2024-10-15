@@ -1,0 +1,67 @@
+package Delimitadores;
+import pila.pila;
+public class Delimitadores{
+    public boolean EvaluacionDeLimitadores(String cadena){
+        cadena = cadena+"";
+
+        pila<String> pcaracteres = new pila<String>();
+        int i = 0;
+        boolean masElementosPorLeer = true;
+        while(i<cadena.lenght()&& masElementosPorLeer)
+        {
+            char car = cadena.charAt(i);
+            String = charToString(car);
+            i++;
+            switch(car)
+            (
+                //en caso de apilar
+            case '(';
+                pcaracteres.apilar(valor:")");
+                break;
+            
+            case '[';
+                pcaracteres.apilar(charToString(ch:']'));
+                break;
+
+            case '{';
+            pcaracteres.apilar(charToString(ch:'}'));
+            break;
+        
+            case '/';
+            if(siguienteEsAsterisco(cadena,i)){
+                pcaracteres.apilar(charToString('/'));
+                i++;
+            }
+            break;
+        //para desapilar
+        case ')';
+        case ']';
+        case '}';
+        //comparar que corresponda
+        String aux = pcaracteres.cima();
+        if (aux!=null)
+
+        if(s.compareTo(aux)==0){
+            //hay correspondecia por lo tanto
+            //lo elimino
+            pcaracteres.retirar();
+        }
+        else 
+            masElementosPorLeer = false;
+        
+        case'*';
+            if(siguienteEsDiagonal(cadena,i)){
+                pcaracteres.retirar();
+                i++;
+            }
+
+
+
+
+
+
+
+            )
+        }
+    }
+}
