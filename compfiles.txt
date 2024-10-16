@@ -1,13 +1,16 @@
 ./pila/Nodo.java
 ./pila/Pila.java
+./delimitadores/AppDelimitadores.java
 ./hash/Ciudad.java
 ./hash/Persona.java
 ./lista/Nodo.java
 ./lista/PosicionIlegalException.java
+./lista/clienteMainLista.java
 ./lista/Lista.java
+./lista/DemoLinkedList.java
 ./lista/DemoArrayList.java
-./lista/ClienteMainLista.java
 ./lista/ClienteMainList.java
+./lista/Persona.java
 ./cola/Nodo.java
 ./cola/Cola.java
 ./miPrincipal/Principal.java
