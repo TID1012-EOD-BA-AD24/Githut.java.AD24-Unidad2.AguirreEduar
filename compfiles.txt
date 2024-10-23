@@ -6,6 +6,8 @@
 ./lista/DemoLinkedList.java
 ./lista/ClienteMainList.java
 ./lista/PosicionIlegalException.java
+./listaDoble/ListaDoble.java
+./listaDoble/Nodo.java
 ./delimitadores/AppDelimitadores.java
 ./hash/Persona.java
 ./hash/Ciudad.java
