@@ -8,6 +8,7 @@
 ./lista/PosicionIlegalException.java
 ./listaDoble/ListaDoble.java
 ./listaDoble/Nodo.java
+./listaDoble/clienteMainListaDoble.java
 ./delimitadores/AppDelimitadores.java
 ./hash/Persona.java
 ./hash/Ciudad.java
